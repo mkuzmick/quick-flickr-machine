@@ -52,7 +52,6 @@ async function main(yargs) {
 
 var theStart = moment().format("x");
 
-
 //
 main(yargs)
   .then((result) => {
