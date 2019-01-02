@@ -32,6 +32,9 @@ exports.setDefaults = function(yargs){
   if (yargs.userId) {
     conf.set('userId', yargs.userId)
   }
+  if (yargs.perPage) {
+    conf.set('perPage', yargs.perPage)
+  }
   console.log("Here are your current defaults.");
   console.log(chalk.cyan(JSON.stringify(conf.all, null, 4)));
   console.log("To change any of these, run print with the --settings flag along with --key=value args for anything you'd like to set");
